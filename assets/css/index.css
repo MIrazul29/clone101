@@ -1,0 +1,265 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    line-height: 1.5;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.container{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+/* Nav */
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 20px 0;
+    font-size: 13px;
+  }
+  
+  .main-nav .logo {
+    width: 110px;
+  }
+  
+  .main-nav ul {
+    display: flex;
+  }
+  
+  .main-nav ul li {
+    padding: 0 10px;
+  }
+  
+  .main-nav ul li a {
+    padding-bottom: 2px;
+  }
+  
+  .main-nav ul li a:hover {
+    border-bottom: 2px solid #262626;
+  }
+  
+  .main-nav ul.main-menu {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+/* show-case */
+.btn{
+ cursor: pointer;
+ display: inline-block;
+ font-weight: bold;
+ background-color: black;
+ color: white;
+ font-size: 15px;
+ padding: 10px 10px;
+}
+.btn:hover{
+    opacity: .75;
+}
+.show-case{
+    width: 100%;
+    height: 400px;
+    background:url('../images/show1.png')
+    no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+}
+.show-case h2,.show-case p{
+    margin-bottom: 20px;
+}
+
+/* home-card */
+.home-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 16px;
+    margin-bottom: 40px;
+}
+.home-cards img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.home-cards h3{
+    padding-bottom: 5px;
+}
+.home-cards a{
+    display: inline-block;
+    padding-top: 5px;
+    text-transform: uppercase;
+    color: rgb(34, 34, 192);
+    font-weight: bold;
+}
+.home-cards a:hover i{
+    margin-left: 10px;
+}
+/* xbox */
+.xbox{
+    background: url(../images/xbox.png)
+    no-repeat center center/cover;
+    height: 400px;
+}
+.xbox .xbox-content{
+    background-color: black;
+    height: 400px;
+    width: 33%;
+    color: white;
+    padding: 114px 0 0 50px;
+   
+}
+/* home-card2 */
+.home-cards2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 16px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+.home-cards2 img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.home-cards2 h3{
+    padding-bottom: 5px;
+}
+.home-cards2 a{
+    display: inline-block;
+    padding-top: 5px;
+    text-transform: uppercase;
+    color: rgb(34, 34, 192);
+    font-weight: bold;
+}
+.home-cards2 a:hover i{
+    margin-left: 10px;
+}
+
+/* carbon */
+
+.carbon{
+    background: url('../images/carbon.jpg') no-repeat center center/cover
+    ;
+    height: 400px;
+    width: 100%;
+}
+.carbon-content{
+    color: white;
+    padding: 100px 0 0 90px;
+    width: 45%;
+    font-size: 15px;
+
+}
+.dark-btn{
+    background: white;
+    color: black;
+    display: inline-block;
+    padding: 8px 8px;
+    margin-top: 5px;
+}
+.dark-btn:hover{
+    background-color: cornsilk;
+    color: rgb(255, 0, 0);
+}
+ /* Follow  */
+
+ .follow{
+     display: flex;
+     padding-top: 30px;
+     justify-content: flex-start;
+     align-items: center;
+     font-weight: bold;
+     font-size: 16px;
+     margin-bottom: 30px;
+ }
+
+.follow a{
+    padding-left: 20px;
+}
+
+/* links */
+.links{
+    background-color: #f2f2f2;
+    font-size: 12px;
+    padding:  35px 0;
+  
+}
+
+.links-inner{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 15px 15px;
+    grid-gap: 5px;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+.links li{
+    padding: 5px 5px;
+}
+/* footer */
+
+.footer{
+    background-color: #f2f2f2;
+    color: #616161;
+    padding: 20px 0;
+}
+
+.footer-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.footer div{
+ display: flex;
+ align-items: center;
+ 
+}
+.footer div i{
+    padding-right: 7px;
+}
+.footer-inner ul{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.footer-inner li{
+    padding: 0 10px;
+}
+@media (max-width: 700px) {
+    .home-cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .home-cards2{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .xbox-content p{
+        display: none;
+    }
+    .carbon-content{
+        width: 100%;
+    }
+    .links .links-inner{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
